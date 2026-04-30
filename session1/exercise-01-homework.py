@@ -63,6 +63,10 @@ with open(FILE_PATH, "r", newline="", encoding="utf-8") as file:
 
 print("Task 5 - Average rating_imdb:", total/count if count > 0 else "No valid values")
 
+# Complexity:
+# Time: O(n) - worst case only one 'Action" at last index
+# Space: O(1) - stores only 1 row at a time
+
 # Task 6: Compute avg. of one or more cols
 with open(FILE_PATH, "r", newline="", encoding="utf-8") as file:
     reader = csv.reader(file)
@@ -95,3 +99,19 @@ with open(FILE_PATH, "r", newline="", encoding="utf-8") as file:
             continue
 
 print("Task 7 - 8+ Rating", high_rating_count)
+
+# Task 8: Report complexit for tasks 4 & 5
+    # T4 - First-match search (find Action movie):
+    # Time: O(n) - worst case only one 'Action" at last index
+    # Space: O(1) - stores only 1 row at a time
+
+    # T5 - Average computation (rating_imdb):
+    # Time: O(n) - loops through every row to compute avg.
+    # Space O(1) - store total/count cars - not entire
+
+## Homework (Session 1)
+- File: `session1/exercise-01-homework.py`
+- Status: completed
+- Notes:
+  - computed averages for rating and one additional numeric column
+  - handled missing or invalid values safely during computations
