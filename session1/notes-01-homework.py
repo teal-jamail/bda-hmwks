@@ -71,3 +71,44 @@ with open(FILE_PATH, "r", newline="", encoding="utf-8") as file:
 print("Task 5 - Average rating_imdb:", total/count if count > 0 else "No valid values")
     # divides total count to get avg.
     # 'if count > 0' prevents div. by 0 if no valid rating
+
+# Complexity:
+# Time: O(n) - worst case only one 'Action" at last index
+# Space: O(1) - stores only 1 row at a time
+
+# Task 6: Compute avg. of one or more cols (same as above)
+with open(FILE_PATH, "r", newline="", encoding="utf-8") as file:
+    reader = csv.reader(file)
+    next(reader)
+
+    total = 0.0
+    count= 0
+    for row in reader:
+        try: 
+            metascore = float(row[13])
+            total += metascore
+            count += 1
+        except (ValueError, IndexError):
+            continue
+
+print("Task 6 - Average metascore:", total/count if count > 0 else "No valid values")
+
+# Task 7: Count how many movies have rating_imdb >= 8.0.
+with open(FILE_PATH, "r", newline="", encoding="utf-8") as file:
+    reader = csv.reader(file)
+    next(reader)
+
+    high_rating_count = 0 # start count at 0
+    for item in reader:
+        try:
+            rating = float(row[5]) # convert ratings to decimal
+            if rating >= 8.0: # check if rating 8 or above
+                high_rating_count += 1 3 if yes add 1 to count
+        except (ValueError, IndexError): #skip null
+            continue
+
+print("Task 7 - 8+ Rating", high_rating_count)
+
+# Complexity:
+# Time: O(n) - must loop through every row to check every rating
+# Space: O(1) - only stores one row at a time plus one counter variable
