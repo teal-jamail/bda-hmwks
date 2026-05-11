@@ -1,0 +1,290 @@
+{
+  "quiz_title": "Python CSV DictReader Quiz",
+  "score": 7,
+  "score_total": 10,
+  "total_questions": 10,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "What does `csv.DictReader(file)` return for each row?",
+      "selected_indexes": [],
+      "selected_labels": "",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. A dictionary using column names as keys",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`csv.DictReader` reads each CSV row as a dictionary, using the header row as keys.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "Why is dictionary-style access often clearer than index-based access in CSV files?",
+      "selected_indexes": [],
+      "selected_labels": "",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. Because column names are more meaningful than numeric indexes",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Accessing columns by name, such as `row[\"title\"]`, is usually clearer and easier to maintain than using indexes.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "When using `csv.DictReader`, what type are CSV values read as?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. Strings",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        3
+      ],
+      "correct_labels": "3. Strings",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "CSV values are still read as strings, so numeric conversion must be done manually when needed.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "Which of the following are used in this session?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `csv.DictReader`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1,
+        2,
+        3
+      ],
+      "correct_labels": "1. `csv.DictReader`; 2. key-based access like `row[\"title\"]`; 3. `break` for first-match search",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "This session focuses on `csv.DictReader`, key-based access, counters, loops, and `break`, not pandas.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "What does `reader.fieldnames` give you?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. The list of column names",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. The list of column names",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`reader.fieldnames` returns the column names taken from the CSV header row.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 6",
+      "question_text": "Why do we still use a counter with dictionary rows?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. Because counting logic still uses loop + condition + counter",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. Because counting logic still uses loop + condition + counter",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Even though access is by key, counting still depends on looping through rows and increasing a counter when a condition is true.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 7",
+      "question_text": "What is the purpose of `break` when finding the first matching row?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. It stops the loop after the first match",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. It stops the loop after the first match",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`break` stops the loop immediately once the first matching row is found.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 8",
+      "question_text": "What is the difference between checking `genres == \"Action\"` and `\"Action\" in genres`?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. The first checks exact equality, while the second checks whether Action appears inside a longer string",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. The first checks exact equality, while the second checks whether Action appears inside a longer string",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Exact equality matches only `Action`, while `in` also matches values like `Action, Adventure`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 9",
+      "question_text": "Which of the following are valid tasks from this session?",
+      "selected_indexes": [
+        1,
+        2,
+        4
+      ],
+      "selected_labels": "1. Count how many movies are from the USA; 2. Find the missing data point in an incomplete dataset; 4. Print only the first 5 data rows",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1,
+        2,
+        4
+      ],
+      "correct_labels": "1. Count how many movies are from the USA; 2. Find the missing data point in an incomplete dataset; 4. Print only the first 5 data rows",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Part 1 includes counting, first rows, exact and partial matches, and finding missing data in `movies_incomplete`. Replacing missing years belongs to Part 2.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 10",
+      "question_text": "What is the time complexity of scanning the CSV row by row to find a match in the worst case?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. O(n)",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        3
+      ],
+      "correct_labels": "3. O(n)",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "In the worst case, the script may inspect every row once, so the time complexity is O(n).",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    }
+  ]
+}

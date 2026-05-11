@@ -1,0 +1,29 @@
+{
+  "mode": "essay",
+  "quiz_title": "Complexity Basics",
+  "question": "Describe the `time` complexity of:\nA) searching a number in an unsorted list\nB) searching a number in a sorted list using binary search\nC) sorting a list using bubble sort\n\nProvide a brief explanation for each case (for example, justify why the complexity is O(n)).",
+  "student_answer": "A) Search number on an unsorted list: \nO(n) - Linear: Needs to check ea. item once\n\nB) Search num. in sorted list w/ binary search:\nO(log n) - Log-linear: Opens to middle, then decides which half, then continuously divides in half\n\nC) Bubble sort:\nO(n²) — Quadratic: Compares adjacent pairs then swaps to correct order. Loop-in-loop, ea. item compared w/ every other item",
+  "points_awarded": null,
+  "total_points": 6,
+  "score_percent": null,
+  "did_well": [],
+  "missing": [
+    "Missing: A: Linear search",
+    "Missing: B: Binary search",
+    "Missing: C: Bubble sort"
+  ],
+  "suggestions": [
+    "Address each missing criterion explicitly in separate sentences.",
+    "Use concrete wording about why requirements.txt improves reproducibility and collaboration.",
+    "Auto provider failover attempted: gemini",
+    "AI note: AI unavailable (provider server error); deterministic fallback used."
+  ],
+  "ai_unavailable": true,
+  "ai_error": "AI unavailable (server_error). Detailed provider error omitted for privacy.",
+  "ai_reason": "server_error",
+  "scoring_mode": "heuristic_fallback",
+  "scoring_confidence": "low",
+  "ai_provider": "gemini",
+  "ai_provider_requested": "auto",
+  "ai_model": "gemini-flash-latest"
+}

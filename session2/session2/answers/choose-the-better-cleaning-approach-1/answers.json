@@ -1,0 +1,30 @@
+{
+  "mode": "essay",
+  "quiz_title": "choose the better cleaning approach",
+  "question": "Assume that `my_data` is a list with many rows, and some values are missing (represented as empty strings \"\").\n\nYou can:\n1. Clean in place (modify the original list directly), or\n2. Copy first to a new list, then clean the copied list.\n\nCompare the two approaches in terms of:\n- time complexity\n- space complexity\n- risk/safety\n\nThen explain which option you would choose for:\n- a quick one-off local script\n- a production workflow where raw data must be preserved\n\nBe specific with Big-O notation (for example `O(n)`, `O(1)`, `O(n)` extra space).",
+  "student_answer": "2. Copy first to a new list, then clean the copied list.",
+  "points_awarded": 0.0,
+  "total_points": 4,
+  "score_percent": 0.0,
+  "did_well": [],
+  "missing": [
+    "A comparison of time complexity using Big-O notation for both approaches.",
+    "A comparison of space complexity (extra memory) for both approaches.",
+    "An explanation of the risks associated with in-place modification versus the safety of copying data.",
+    "Specific recommendations for a quick local script versus a production workflow.",
+    "The reasoning behind why space complexity differs between the two methods."
+  ],
+  "suggestions": [
+    "Ensure you answer every part of the prompt, including the specific requests for Big-O notation.",
+    "Explain the 'why' behind the complexity—for example, why copying data requires O(n) extra space.",
+    "Address the specific scenarios mentioned: local one-off scripts and production environments."
+  ],
+  "ai_unavailable": false,
+  "ai_error": "",
+  "ai_reason": "none",
+  "scoring_mode": "llm_rubric",
+  "scoring_confidence": "high",
+  "ai_provider": "gemini",
+  "ai_provider_requested": "auto",
+  "ai_model": "gemini-flash-latest"
+}

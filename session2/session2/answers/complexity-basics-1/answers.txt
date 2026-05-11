@@ -1,0 +1,30 @@
+Quiz: Complexity Basics
+
+Essay Question:
+Describe the `time` complexity of:
+A) searching a number in an unsorted list
+B) searching a number in a sorted list using binary search
+C) sorting a list using bubble sort
+
+Provide a brief explanation for each case (for example, justify why the complexity is O(n)).
+
+Student Answer:
+A) Search number on an unsorted list: 
+O(n) - Linear: Needs to check ea. item once
+
+B) Search num. in sorted list w/ binary search:
+O(log n) - Log-linear: Opens to middle, then decides which half, then continuously divides in half
+
+C) Bubble sort:
+O(n²) — Quadratic: Compares adjacent pairs then swaps to correct order. Loop-in-loop, ea. item compared w/ every other item
+
+Score: N/A (AI unavailable)
+
+Feedback:
+- Missing: Missing: A: Linear search
+- Missing: Missing: B: Binary search
+- Missing: Missing: C: Bubble sort
+- Suggestion: Address each missing criterion explicitly in separate sentences.
+- Suggestion: Use concrete wording about why requirements.txt improves reproducibility and collaboration.
+- Suggestion: Auto provider failover attempted: gemini
+- Suggestion: AI note: AI unavailable (provider server error); deterministic fallback used.

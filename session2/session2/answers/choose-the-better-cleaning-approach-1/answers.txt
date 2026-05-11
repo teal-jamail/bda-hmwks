@@ -1,0 +1,34 @@
+Quiz: choose the better cleaning approach
+
+Essay Question:
+Assume that `my_data` is a list with many rows, and some values are missing (represented as empty strings "").
+
+You can:
+1. Clean in place (modify the original list directly), or
+2. Copy first to a new list, then clean the copied list.
+
+Compare the two approaches in terms of:
+- time complexity
+- space complexity
+- risk/safety
+
+Then explain which option you would choose for:
+- a quick one-off local script
+- a production workflow where raw data must be preserved
+
+Be specific with Big-O notation (for example `O(n)`, `O(1)`, `O(n)` extra space).
+
+Student Answer:
+2. Copy first to a new list, then clean the copied list.
+
+Score: 0.00%
+
+Feedback:
+- Missing: A comparison of time complexity using Big-O notation for both approaches.
+- Missing: A comparison of space complexity (extra memory) for both approaches.
+- Missing: An explanation of the risks associated with in-place modification versus the safety of copying data.
+- Missing: Specific recommendations for a quick local script versus a production workflow.
+- Missing: The reasoning behind why space complexity differs between the two methods.
+- Suggestion: Ensure you answer every part of the prompt, including the specific requests for Big-O notation.
+- Suggestion: Explain the 'why' behind the complexity—for example, why copying data requires O(n) extra space.
+- Suggestion: Address the specific scenarios mentioned: local one-off scripts and production environments.

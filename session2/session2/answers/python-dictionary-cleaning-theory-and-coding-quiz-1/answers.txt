@@ -1,0 +1,94 @@
+Quiz: Python Dictionary Cleaning Theory and Coding Quiz
+Score: 7/10
+
+Question 1
+Why is `csv.DictReader` often easier to maintain than `csv.reader`?
+Selected: 2. It allows access by column name instead of numeric index
+Correct: 2. It allows access by column name instead of numeric index
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Column-name access makes code clearer and reduces index mistakes.
+
+Question 2
+Given `movie = {"music_by": ""}`, which check correctly treats the field as missing?
+Selected: 3. `if movie["music_by"].strip() == "":`
+Correct: 3. `if movie["music_by"].strip() == "":`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: In CSV-style data cleaning, missing values are often empty strings, so stripping and comparing to `""` is reliable.
+
+Question 3
+Which pattern best describes a basic cleaning workflow?
+Selected: 2. Detect missing values -> update/fix -> validate -> save
+Correct: 2. Detect missing values -> update/fix -> validate -> save
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Practical cleaning typically includes detection, correction, verification, and writing cleaned output.
+
+Question 4
+What does this line do?
+
+`movie["music_by"] = "Joe Hisaishi"`
+Selected: 2. Creates or updates the `music_by` value
+Correct: 2. Creates or updates the `music_by` value
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Dictionary assignment updates an existing key or creates it if missing.
+
+Question 5
+When writing cleaned rows to CSV with `DictWriter`, which steps are required?
+Selected: 2. Call `writeheader()`; 3. Call `writerows(rows)`; 4. Use `json.dump` in the same file handle
+Correct: 1. Create `DictWriter` with `fieldnames`; 2. Call `writeheader()`; 3. Call `writerows(rows)`
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: `DictWriter` needs field names, then header writing, then row writing. `json.dump` is unrelated to CSV output.
+
+Question 6
+If your script loops through all `n` rows once to detect missing values, what is the time complexity?
+Selected: 3. O(n)
+Correct: 3. O(n)
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: A single full pass over rows is linear time.
+
+Question 7
+If your script stores all cleaned rows in a list before saving, what is the extra space complexity with respect to rows?
+Selected: 1. O(1)
+Correct: 3. O(n)
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: Keeping all rows in memory grows linearly with dataset size.
+
+Question 8
+Why is saving cleaned data to a new file often better than overwriting the raw input immediately?
+Selected: 2. It preserves the original data for audit and rollback
+Correct: 2. It preserves the original data for audit and rollback
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Keeping raw data intact makes debugging and verification safer.
+
+Question 9
+Which statements about dictionary/list cleaning code are true?
+Selected: 1. `for row in rows:` iterates one dictionary per row; 2. `row["year"] = "1989"` updates the current row
+Correct: 1. `for row in rows:` iterates one dictionary per row; 2. `row["year"] = "1989"` updates the current row; 3. `break` can stop at the first match
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: The first three are core loop behaviors; converting to `int` is unsafe if values are missing or non-numeric.
+
+Question 10
+Which strategy is best before computing an average from CSV text values?
+Selected: 3. Validate/clean values first, then convert numeric fields
+Correct: 3. Validate/clean values first, then convert numeric fields
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Numeric statistics should be computed only after missing/invalid values are handled.
